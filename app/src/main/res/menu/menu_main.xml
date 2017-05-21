@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/invasionMenu"
+        android:title="Invade" />
+    <item
+        android:id="@+id/heroMenu"
+        android:title="Hero" />
+    <item
+        android:id="@+id/settlementNameChangeMenu"
+        android:title="Change Settlement Name" />
+    <item
+        android:id="@+id/settlementUpgradeMenu"
+        android:title="Upgrade Settlement" />
+    <item
+        android:id="@+id/religionMenu"
+        android:title="Form Religion"
+        android:visible="false" />
+    <item
+        android:id="@+id/militaryMenu"
+        android:title="Military" />
+    <item
+        android:id="@+id/tradeMenu"
+        android:title="Trade" />
+    <item
+        android:id="@+id/helpMenu"
+        android:title="Help" />
+</menu>

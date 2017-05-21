@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.00">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:gravity="center"
+                android:text="--  Invasion  --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <TextView
+                android:id="@+id/soldierMPTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="Hero Military Power: "
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/heroMPTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="Soldier Military Power: "
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/invasionMPTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="Military Power: "
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/invasionResourcesTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="Resources: "
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/svTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Small Village"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/svButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mvTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Medium Village"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/mvButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lvTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Large Village"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/lvButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Small City"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/scButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mcTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Medium City"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/mcButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lcTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Large City"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/lcButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/skTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Small Kingdom"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/skButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Medium Kingdom"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/mkButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Large Kingdom"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/lkButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/seTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Small Empire"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/seButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/meTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Medium Empire"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/meButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/leTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Large Empire"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+                <Button
+                    android:id="@+id/leButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invade!" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

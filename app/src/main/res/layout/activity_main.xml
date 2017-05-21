@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ryan.thesomewhatincrementalgameoflife.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTV"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Path to an Empire"
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mainSettlementNameTV"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Settlement Name"
+                android:textAppearance="@android:style/TextAppearance.Widget"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/resourceTV"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Resources: 0"
+                    android:textAppearance="@android:style/TextAppearance.Widget"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/militaryPowerTV"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Military Power: 0"
+                    android:textAppearance="@android:style/TextAppearance.Widget"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/goldTV"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Gold: 0"
+                    android:textAppearance="@android:style/TextAppearance.Widget"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gatheringTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="--  Gathering --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <Button
+                android:id="@+id/newGameButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/milGoldTV"
+                android:layout_toRightOf="@+id/milGoldTV"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:text="New Game" />
+
+            <Button
+                android:id="@+id/continueButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/newGameButton"
+                android:layout_alignStart="@+id/newGameButton"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:text="Continue" />
+
+            <Button
+                android:id="@+id/lumberMillButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lumber Mill(0): +0.1 R/s (Cost: 20R)" />
+
+            <Button
+                android:id="@+id/huntersCampButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hunter's Camp(0): +1.0 R/s (Cost: 200R)" />
+
+            <Button
+                android:id="@+id/quarryButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quarry(0): +10 R/s (Cost: 2,000R)" />
+
+            <Button
+                android:id="@+id/mineButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mine(0): +100 R/s (Cost: 20,000R)" />
+
+            <Button
+                android:id="@+id/farmButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Farm(0): +1,000 R/s (Cost: 200,000R)" />
+
+            <Button
+                android:id="@+id/smeltingFurnaceButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smelting Furnace(0): +10,000 R/s (Cost: 2,000,000R)" />
+
+            <TextView
+                android:id="@+id/upgradesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:paddingBottom="8sp"
+                android:paddingTop="8sp"
+                android:text="--  UPGRADES --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <Button
+                android:id="@+id/armoryButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Armory: Unlocks Hero Armor and Soldier Upgrades (Cost: 1,000R)" />
+
+            <Button
+                android:id="@+id/blacksmithButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blacksmith: Unlocks Hero Weapons and Soldier Upgrades (Cost: 1,000R)" />
+
+            <Button
+                android:id="@+id/crannyButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cranny: Lose Less Resources after being invaded (Cost: 10,000R)" />
+
+            <Button
+                android:id="@+id/templeButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temple: Allows Creation of a Religion (Cost: 30,000R)" />
+
+            <Button
+                android:id="@+id/barracksButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barracks: 15% Military Power Increase (Cost: 200,000R)" />
+
+            <Button
+                android:id="@+id/cropRotationButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Implement Crop Rotation: 15% Resource Gain Increase (Cost: 200,000R)" />
+
+            <Button
+                android:id="@+id/marketplaceButton"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organize Marketplace: 15% Bonus to Gold Gained by Trading (Cost: 200,000R)" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

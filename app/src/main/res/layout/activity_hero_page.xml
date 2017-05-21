@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:gravity="center"
+                android:text="--  The Hero (You) --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <TextView
+                android:id="@+id/heroNameTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Name:"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/heroPowerTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Power Contribution:"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/heroGoldTV"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Gold:"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:text="-- Armor --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/headTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Head: Great Ambitions"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/headButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Cap: +100 Power (Cost: 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shouldersTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Shoulders: The Weight of Your Responsibilities"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/shouldersButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Shoulderpads: +100 Power (Cost: 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/torsoTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Torso: A Delightful Shirt"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/torsoButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Cuirass: +100 Power (Cost: 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/handsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Hands: The Future of Your People"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/handsButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Gloves: +100 Power (Cost; 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/legsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Legs: Not So Delightful Pants"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/legsButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Pants: +100 Power (Cost: 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/feetTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Feet: Two Hermit Crab Shells"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/feetButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Leather Boots: +100 Power (Cost: 100G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-- Weapons --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mhTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Main Hand: Walking Stick"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/mhButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Small Dagger: +200 Power (Cost: 200G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ohTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2.5sp"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="2.5sp"
+                    android:text="Off Hand: Your Other Walking Stick"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget" />
+
+                <Button
+                    android:id="@+id/ohButton"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Buy Small Shield: +200 Power (Cost: 200G)"
+                    android:textColorLink="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

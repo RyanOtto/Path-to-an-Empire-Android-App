@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/militaryLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:gravity="center"
+                android:text="--  Your Army  --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <TextView
+                android:id="@+id/heroMPTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Hero Military Power: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/soldierMPTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Soldier Military Power: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/soldierMilMultTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Soldier Upgrade Bonus: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/genMilMultTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="General Military Multiplier: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/totalMPTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Total Military Power: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/milGoldTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="2.5sp"
+                android:paddingLeft="6sp"
+                android:paddingTop="2.5sp"
+                android:text="Gold: #"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="33sp"
+                android:gravity="center"
+                android:text="--  Hire Soldiers  --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <Button
+                android:id="@+id/scoutButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Scout: +5 Power  (Cost: 5G)" />
+
+            <Button
+                android:id="@+id/raiderButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Raider: +50 POWER (Cost: 50g)" />
+
+            <Button
+                android:id="@+id/archerButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Archer: +500 Power (Cost: 500G)" />
+
+            <Button
+                android:id="@+id/mercenaryButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Mercenary: +5,000 Power (Cost: 5,000G)" />
+
+            <Button
+                android:id="@+id/swordsmanButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Swordsman: +50,000 Power(Cost: 50,000G)" />
+
+            <Button
+                android:id="@+id/cavalierButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Cavalry: +500,000 Power (Cost: 500,000G)" />
+
+            <Button
+                android:id="@+id/knightButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hire Knight: +5,000,000 Power (Cost: 5,000,000G)" />
+
+            <TextView
+                android:id="@+id/upgradeArmyTV"
+                android:layout_width="match_parent"
+                android:layout_height="33sp"
+                android:gravity="center"
+                android:text="--  Upgrade Army  --"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+            <Button
+                android:id="@+id/upgradeWeaponsButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upgrade To Iron Weapons: +15% Soldier Strength (Cost: 5,000G)" />
+
+            <Button
+                android:id="@+id/upgradeArmorButton"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upgrade To Iron Armor: +15% Soldier Strength (Cost: 5,000G)" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
