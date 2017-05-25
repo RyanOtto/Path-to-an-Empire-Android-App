@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

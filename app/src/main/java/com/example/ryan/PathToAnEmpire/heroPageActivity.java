@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 
 
 import android.content.SharedPreferences;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static com.example.ryan.thesomewhatincrementalgameoflife.NewGameActivity.PREFNAME;
+import static com.example.ryan.PathToAnEmpire.NewGameActivity.PREFNAME;
 
 public class heroPageActivity extends AppCompatActivity implements View.OnClickListener {
 

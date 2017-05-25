@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-import static com.example.ryan.thesomewhatincrementalgameoflife.NewGameActivity.PREFNAME;
+import static com.example.ryan.PathToAnEmpire.NewGameActivity.PREFNAME;
 
 public class invasionPageActivity extends AppCompatActivity implements View.OnClickListener {
 

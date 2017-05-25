@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.ryan.thesomewhatincrementalgameoflife", appContext.getPackageName());
+        assertEquals("com.example.ryan.PathToAnEmpire", appContext.getPackageName());
     }
 }

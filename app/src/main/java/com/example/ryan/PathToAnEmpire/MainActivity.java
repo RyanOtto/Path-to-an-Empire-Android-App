@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,14 +18,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import java.util.Random;
 
 import static android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static com.example.ryan.thesomewhatincrementalgameoflife.NewGameActivity.PREFNAME;
+import static com.example.ryan.PathToAnEmpire.NewGameActivity.PREFNAME;
 
  public class MainActivity extends AppCompatActivity implements View.OnClickListener {
      //-- Player Status UI Elements --

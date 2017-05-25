@@ -1,4 +1,4 @@
-package com.example.ryan.thesomewhatincrementalgameoflife;
+package com.example.ryan.PathToAnEmpire;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static com.example.ryan.thesomewhatincrementalgameoflife.NewGameActivity.PREFNAME;
+import static com.example.ryan.PathToAnEmpire.NewGameActivity.PREFNAME;
 
 public class militaryPageActivity extends AppCompatActivity implements View.OnClickListener{
     double milPageGold=0, newMilitaryPower=0, soldierMP=0.0, heroMP=0.0, milMult=1.0, soldierMPMult=1.0;
